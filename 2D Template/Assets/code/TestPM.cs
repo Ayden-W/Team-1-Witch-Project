@@ -1,23 +1,19 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class TestPM : MonoBehaviour
 {
 
     private float activeMoveSpeed;
     public float moveSpeed;
     public Rigidbody2D rb2D;
     private Vector2 moveInput;
-    
 
     //Keycodes
     public KeyCode Up;
     public KeyCode left;
     public KeyCode right;
-    public KeyCode down;
-    public KeyCode Interact;
 
     //Bools
     public bool isFacingRight;
@@ -44,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
             isFacingRight = false;
-
+            
         }
         if (Input.GetKey(right))
         {
@@ -52,30 +48,15 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(Up))
         {
-
+            
         }
         if (isFacingRight == false)
         {
             GetComponent<SpriteRenderer>().flipY = true;
         }
-        else
+        else 
         {
             GetComponent<SpriteRenderer>().flipY = false;
-        }
-
-        if (Collision.collider.CompareTag(""))
-        {
-            if (Input.GetKey(Interact))
-            {
-                Interact();
-            }
-        }
-
-
-
-        static void Interact()
-        {
-
         }
 
     }
