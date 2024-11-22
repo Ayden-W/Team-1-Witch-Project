@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestPM : MonoBehaviour
+public class TestaPM : MonoBehaviour
 {
 
     private float activeMoveSpeed;

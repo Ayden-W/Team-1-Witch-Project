@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode left;
     public KeyCode right;
     public KeyCode down;
-    public KeyCode Interact;
+    public KeyCode PlayerInteract;
 
     //Bools
     public bool isFacingRight;
@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(Up))
         {
-
+           
         }
         if (isFacingRight == false)
         {
@@ -63,13 +63,13 @@ public class PlayerMovement : MonoBehaviour
             GetComponent<SpriteRenderer>().flipY = false;
         }
 
-        if (Collision.collider.CompareTag(""))
-        {
-            if (Input.GetKey(Interact))
+        //if (Collision.collider.CompareTag(""))
+        
+            if (Input.GetKey(PlayerInteract))
             {
                 Interact();
             }
-        }
+        
 
 
 

@@ -488,16 +488,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858571463}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff997cfa1fedfb64fbea757ebfbb7857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  rb2D: {fileID: 0}
+  rb2D: {fileID: 858571469}
   Up: 119
   left: 97
   right: 100
+  down: 115
+  PlayerInteract: 102
   isFacingRight: 0
   anim: {fileID: 0}
 --- !u!61 &858571466
@@ -627,8 +629,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1f6ea67390c2b43beee1a8a3a16bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeMoveSpeed: 0
   moveSpeed: 5
   rb2D: {fileID: 858571469}
+  moveInput: {x: 0, y: 0}
   Up: 119
   left: 97
   right: 100
@@ -1089,6 +1093,8 @@ MonoBehaviour:
   Up: 0
   left: 0
   right: 0
+  down: 0
+  PlayerInteract: 0
   isFacingRight: 0
   anim: {fileID: 0}
 --- !u!61 &1685299070
