@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class NPC1 : MonoBehaviour
 {
     public GameObject dialoguePanel;
@@ -9,6 +10,7 @@ public class NPC1 : MonoBehaviour
     public string[] dialogue;
     private int index;
 
+    public GameObject contButton;
     public float wordSpeed;
     public bool playerIsClose;
 
@@ -31,6 +33,10 @@ public class NPC1 : MonoBehaviour
 
 
         }    
+        if(dialogueText.text == dialogue[index])
+        {
+            contButton.SetActive(true);
+        }
     }
 
 
@@ -52,6 +58,9 @@ public class NPC1 : MonoBehaviour
 
     public void NextLine()
     {
+
+        contButton.SetActive(false);
+
         if(index < dialogue.Length - 1)
         {
             index++;
