@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestaPM : MonoBehaviour
+public class Pcmovement : MonoBehaviour
 {
 
     private float activeMoveSpeed;
@@ -38,9 +38,7 @@ public class TestaPM : MonoBehaviour
 
         if (Input.GetKey(left))
         {
-
             isFacingRight = false;
-            
         }
         if (Input.GetKey(right))
         {
@@ -48,13 +46,13 @@ public class TestaPM : MonoBehaviour
         }
         if (Input.GetKey(Up))
         {
-            
+
         }
         if (isFacingRight == false)
         {
             GetComponent<SpriteRenderer>().flipY = true;
         }
-        else 
+        else
         {
             GetComponent<SpriteRenderer>().flipY = false;
         }
