@@ -8,6 +8,10 @@ public class Dialogue : MonoBehaviour
 {
     //UI References
     [SerializeField]
+    private GameObject dialogueCanvas;
+
+
+    [SerializeField]
     private TMP_Text SpeakerText;
 
     [SerializeField]
@@ -28,16 +32,46 @@ public class Dialogue : MonoBehaviour
     [SerializeField]
     private Sprite[] portrait;
 
-
+    private bool dialogueActivated;
+    private int step;
 
       // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey("E"))
+        if(Input.GetButtonDown("Interact") && dialogueActivated == true)
         {
-            SpeakerText.text = speaker[0];
-            dialogueText.text = dialogueWords[0];
-            PortraitImage.sprite = portrait[0];
+            if (step >= speaker.Length)
+            {
+                dialogueCanvas.SetActive(false);
+                step = 0;
+            }
+            else
+            {
+                dialogueCanvas.SetActive(true);
+                SpeakerText.text = speaker[step];
+                dialogueText.text = dialogueWords[step];
+                PortraitImage.sprite = portrait[step];
+                step += 1;
+            }
+
+            
         }
+    }
+
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            dialogueActivated = true;
+        }
+    }
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        dialogueActivated = false;
+        dialogueCanvas.SetActive(false);
     }
 }

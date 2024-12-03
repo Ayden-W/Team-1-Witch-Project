@@ -1107,14 +1107,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3865053bed3d5e642a8424d3433d0705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 2008292978}
   SpeakerText: {fileID: 2015413238}
   dialogueText: {fileID: 978220437}
   PortraitImage: {fileID: 1254545450}
   speaker:
   - Nyla
+  - Nyla
+  - malory
+  - malory
   dialogueWords:
-  - Blablabla
-  portrait: []
+  - Haha my magic spell worked
+  - I was able to summon a ghost back to the mortal world
+  - ugh
+  - where am I
+  portrait:
+  - {fileID: 7482667652216324306, guid: d3a5dd578842db140891eeddc6ff839f, type: 3}
+  - {fileID: 7482667652216324306, guid: d3a5dd578842db140891eeddc6ff839f, type: 3}
+  - {fileID: 7482667652216324306, guid: d3a5dd578842db140891eeddc6ff839f, type: 3}
+  - {fileID: 7482667652216324306, guid: d3a5dd578842db140891eeddc6ff839f, type: 3}
 --- !u!212 &1915708955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1211,7 +1222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2008292979
 MonoBehaviour:
   m_ObjectHideFlags: 0
