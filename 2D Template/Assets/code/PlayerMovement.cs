@@ -56,11 +56,11 @@ public class PlayerMovement : MonoBehaviour
         }
         if (isFacingRight == false)
         {
-            GetComponent<SpriteRenderer>().flipY = true;
+            GetComponent<SpriteRenderer>().flipX = false;
         }
         else
         {
-            GetComponent<SpriteRenderer>().flipY = false;
+            GetComponent<SpriteRenderer>().flipX = true;
         }
 
         //if (Collision.collider.CompareTag(""))
