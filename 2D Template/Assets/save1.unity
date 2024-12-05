@@ -861,7 +861,6 @@ GameObject:
   - component: {fileID: 1685299072}
   - component: {fileID: 1685299071}
   - component: {fileID: 1685299070}
-  - component: {fileID: 1685299069}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -869,27 +868,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1685299069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685299068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff997cfa1fedfb64fbea757ebfbb7857, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0
-  rb2D: {fileID: 0}
-  Up: 0
-  left: 0
-  right: 0
-  down: 0
-  PlayerInteract: 0
-  isFacingRight: 0
-  anim: {fileID: 0}
 --- !u!61 &1685299070
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1112,20 +1090,29 @@ MonoBehaviour:
   dialogueText: {fileID: 978220437}
   PortraitImage: {fileID: 1254545450}
   speaker:
-  - Nyla
-  - Nyla
-  - malory
-  - malory
+  - Mallori
+  - Nayla
+  - Mallori
+  - Nayla
+  - Mallori
+  - Nayla
   dialogueWords:
-  - Haha my magic spell worked
-  - I was able to summon a ghost back to the mortal world
-  - ugh
-  - where am I
+  - Ugh... What happened? Where am I?
+  - Finally awake, are we? Took you long enough.
+  - "Who are you? What\u2019s going on? And\u2026 why do I feel so\u2014 Am I DEAD?!"
+  - "Dead? Not entirely. Let\u2019s call it... mostly dead. A little collision with
+    a speeding truck will do that to you."
+  - "A truck? Wait, the cat?! It was driving\u2014no, never mind! How do I fix this?"
+  - "Oh, darling, fix it? That\u2019s rich. You don\u2019t just fix being dead. But
+    lucky for you, I\u2019m the best witch around. I can brew a potion to bring you
+    back... if you\u2019re willing to help me, that is."
   portrait:
-  - {fileID: 7482667652216324306, guid: d3a5dd578842db140891eeddc6ff839f, type: 3}
+  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
   - {fileID: 7482667652216324306, guid: d3a5dd578842db140891eeddc6ff839f, type: 3}
   - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
+  - {fileID: 7482667652216324306, guid: d3a5dd578842db140891eeddc6ff839f, type: 3}
   - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
+  - {fileID: 7482667652216324306, guid: d3a5dd578842db140891eeddc6ff839f, type: 3}
 --- !u!212 &1915708955
 SpriteRenderer:
   m_ObjectHideFlags: 0
