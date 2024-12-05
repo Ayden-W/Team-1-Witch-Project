@@ -10,11 +10,8 @@ public class PlayerTeleport : MonoBehaviour
     private GameObject currentTeleporter;
     public bool canTeleport = true;
 
-    void Update()
-    {
-   
-    }
 
+    //When entering TP
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Teleporter"))
@@ -28,6 +25,7 @@ public class PlayerTeleport : MonoBehaviour
 
         }
     }
+    //When exiting TP
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Teleporter"))
@@ -37,10 +35,10 @@ public class PlayerTeleport : MonoBehaviour
         }
     }
 
-    //invoke(wait) to fix code
 
 
 
+    //Wait timer
 
     IEnumerator waitTime()
     {
