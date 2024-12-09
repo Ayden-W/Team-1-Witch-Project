@@ -32,7 +32,7 @@ public class Dialogue : MonoBehaviour
     [SerializeField]
     private Sprite[] portrait;
 
-    private bool dialogueActivated;
+     private bool dialogueActivated;
     private int step;
 
       // Update is called once per frame
