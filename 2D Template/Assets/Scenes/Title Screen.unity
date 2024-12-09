@@ -775,7 +775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675436bf187e37c46b3dbfd076ef1036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Swamp
+  sceneName: Hut
 --- !u!4 &685842383
 Transform:
   m_ObjectHideFlags: 0
