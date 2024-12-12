@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 20ad41390d1bf3f46a2b5ba2eb9be168
+  - enabled: 1
+    path: Assets/Scenes/Teleport Maze.unity
+    guid: 023dd7e31e3dfc544ba11d17041a0aff
   m_configObjects: {}
