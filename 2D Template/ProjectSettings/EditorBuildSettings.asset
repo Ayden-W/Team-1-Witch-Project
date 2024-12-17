@@ -15,9 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Hut.unity
     guid: 273ea620ec4874d499977222b09bdd68
   - enabled: 1
+    path: Assets/Scenes/Swamp.unity
+    guid: a20d533d4122cac4a8c5e617ba0894f3
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 20ad41390d1bf3f46a2b5ba2eb9be168
   - enabled: 1
     path: Assets/Scenes/Teleport Maze.unity
     guid: 023dd7e31e3dfc544ba11d17041a0aff
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: e8bb3622555bffc4db9e44745753773b
   m_configObjects: {}
