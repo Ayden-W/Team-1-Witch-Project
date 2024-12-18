@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 36363559}
   - component: {fileID: 36363561}
-  - component: {fileID: 36363560}
+  - component: {fileID: 36363563}
   - component: {fileID: 36363562}
   m_Layer: 0
   m_Name: GameObject
@@ -157,32 +157,6 @@ Transform:
   m_Father: {fileID: 715006920}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &36363560
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36363558}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.00364542, y: -0.008686423}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.426978, y: 2.8578784}
-  m_EdgeRadius: 0
 --- !u!212 &36363561
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -256,6 +230,12 @@ MonoBehaviour:
   - Garett
   - Mallori
   - 'Garett '
+  - Mallori
+  - 'Garett '
+  - Mallori
+  - 'Garett '
+  - Mallori
+  - 'Garett '
   dialogueWords:
   - "Uh\u2026 hi? Is this Garett\u2019s shop?"
   - "It is. You must be Nayla\u2019s errand runner. The bag is ready."
@@ -263,11 +243,53 @@ MonoBehaviour:
     am? You don\u2019t exactly have eyes."
   - "Perception isn\u2019t limited to sight, my dear. Now, take this. It\u2019s enchanted
     to keep your ingredients safe\u2014don\u2019t lose it."
+  - Thanks, I guess. So, where am I heading next?
+  - "The sewers. You\u2019ll need to find a rat named Eugene. He\u2019s the one who
+    can help you find what you\u2019re after.\""
+  - "The sewers? Of course, it\u2019s the sewers. Anything I should know about this
+    Eugene guy?\""
+  - "Eugene values shiny things and doesn\u2019t work for free. Offer him something
+    valuable if you want his help. And whatever you do, don\u2019t call him \u2018just
+    a rat.\u2019 He\u2019s\u2026 sensitive about that."
+  - "Got it. Shiny thing, don\u2019t insult the rat. Anything else?"
+  - "Just be quick about it. Time isn\u2019t on your side, Mallori. Good luck.\""
   portrait:
   - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
   - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
   - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
   - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
+  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
+  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
+  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
+  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
+  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
+  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
+--- !u!61 &36363563
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36363558}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.248816, y: 6.084812}
+  m_EdgeRadius: 0
 --- !u!1 &424502141
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,12 +677,96 @@ Transform:
   m_GameObject: {fileID: 715006918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.2148, y: -1.2204, z: 0}
-  m_LocalScale: {x: 7.2488165, y: 6.084812, z: 6.5061007}
+  m_LocalScale: {x: 7.2488165, y: 6.084812, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 36363559}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &765549274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 765549276}
+  - component: {fileID: 765549275}
+  m_Layer: 0
+  m_Name: Square
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &765549275
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765549274}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &765549276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765549274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.02, y: -0.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1150847646
 GameObject:

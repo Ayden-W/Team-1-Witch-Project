@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public string sceneName;
-    publc bool canChangeScenes;
+    public bool canChangeScenes;
     public float waitTimeSeconds;
     public GameObject Door;
     
@@ -33,4 +33,4 @@ public class SceneLoader : MonoBehaviour
 
 }
    
-}
+
