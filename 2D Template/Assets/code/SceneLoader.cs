@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public string sceneName;
-    publc bool canChangeScenes;
+    public bool canChangeScenes = true;
     public float waitTimeSeconds;
-    public GameObject Door;
+    private GameObject Door;
     
     public void changeScene()
     {
@@ -17,7 +17,7 @@ public class SceneLoader : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Door"))
+        if (collision.CompareTag("Player"))
         {
            changeScene();
             Debug.Log("Door");
@@ -33,4 +33,4 @@ public class SceneLoader : MonoBehaviour
 
 }
    
-}
+
