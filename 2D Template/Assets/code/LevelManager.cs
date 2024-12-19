@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
-    public string sceneName;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +18,9 @@ public class LevelManager : MonoBehaviour
 
 
 
-    public void changeScene()
+    public void ChangeScene(string scene)
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(scene);
     }
 
 
