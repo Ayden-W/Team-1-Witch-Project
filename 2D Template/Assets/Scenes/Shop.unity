@@ -151,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 36363558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.8573538, y: 0.20056492, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: -0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 715006920}
@@ -277,7 +277,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 2, y: 2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -288,7 +288,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.248816, y: 6.084812}
+  m_Size: {x: 7, y: 9}
   m_EdgeRadius: 0
 --- !u!1 &424502141
 GameObject:
@@ -609,6 +609,8 @@ GameObject:
   m_Component:
   - component: {fileID: 715006920}
   - component: {fileID: 715006919}
+  - component: {fileID: 715006922}
+  - component: {fileID: 715006921}
   m_Layer: 0
   m_Name: Shop-man
   m_TagString: Untagged
@@ -684,6 +686,87 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &715006921
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715006918}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.25, y: 2.68}
+    newSize: {x: 4.25, y: 2.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.25, y: 2.68}
+  m_EdgeRadius: 0
+--- !u!114 &715006922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715006918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3865053bed3d5e642a8424d3433d0705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 1150847646}
+  SpeakerText: {fileID: 1286896387}
+  dialogueText: {fileID: 1605199857}
+  PortraitImage: {fileID: 1957905980}
+  speaker:
+  - Mallori
+  - Garett
+  - Mallori
+  - 'Garett '
+  - Mallori
+  - 'Garett '
+  - Mallori
+  - 'Garett '
+  - Mallori
+  - 'Garett '
+  dialogueWords:
+  - "Uh\u2026 hi? Is this Garett\u2019s shop?"
+  - "It is. You must be Nayla\u2019s errand runner. The bag is ready."
+  - "That\u2019s me\u2026 Mallori. So, uh, no offense, but how do you know who I
+    am? You don\u2019t exactly have eyes."
+  - "Perception isn\u2019t limited to sight, my dear. Now, take this. It\u2019s enchanted
+    to keep your ingredients safe\u2014don\u2019t lose it."
+  - Thanks, I guess. So, where am I heading next?
+  - "The sewers. You\u2019ll need to find a rat named Eugene. He\u2019s the one who
+    can help you find what you\u2019re after.\""
+  - "The sewers? Of course, it\u2019s the sewers. Anything I should know about this
+    Eugene guy?\""
+  - "Eugene values shiny things and doesn\u2019t work for free. Offer him something
+    valuable if you want his help. And whatever you do, don\u2019t call him \u2018just
+    a rat.\u2019 He\u2019s\u2026 sensitive about that."
+  - "Got it. Shiny thing, don\u2019t insult the rat. Anything else?"
+  - "Just be quick about it. Time isn\u2019t on your side, Mallori. Good luck.\""
+  portrait:
+  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
+  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
+  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
+  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
+  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
+  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
+  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
+  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
+  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
+  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
 --- !u!1 &765549274
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,6 +777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 765549276}
   - component: {fileID: 765549275}
+  - component: {fileID: 765549277}
   m_Layer: 0
   m_Name: Square
   m_TagString: Player
@@ -768,6 +852,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &765549277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765549274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff997cfa1fedfb64fbea757ebfbb7857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  rb2D: {fileID: 0}
+  Up: 119
+  left: 97
+  right: 115
+  down: 100
+  PlayerInteract: 101
+  isFacingRight: 0
+  anim: {fileID: 0}
 --- !u!1 &1150847646
 GameObject:
   m_ObjectHideFlags: 0
