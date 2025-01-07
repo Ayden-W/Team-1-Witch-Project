@@ -44,9 +44,9 @@ TagManager:
   - name: New Layer 1
     uniqueID: 2897521465
     locked: 0
-  - name: house
-    uniqueID: 3615898433
-    locked: 0
   - name: tree
     uniqueID: 3610794149
+    locked: 0
+  - name: house
+    uniqueID: 3615898433
     locked: 0
