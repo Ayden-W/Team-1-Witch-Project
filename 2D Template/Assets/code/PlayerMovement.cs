@@ -35,25 +35,60 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput.Normalize();
         rb2D.velocity = moveInput * activeMoveSpeed;
+        
 
         if (Input.GetKey(left))
         {
-
+            anim.SetBool("IsRight", true);
             isFacingRight = false;
+            anim.SetFloat("Speed",1);
 
+        }
+        if (Input.GetKeyUp(left))
+        {
+            anim.SetFloat("Speed",0);
+            anim.SetBool("Facing UP", true);
+        }
+        if (Input.GetKeyUp(right))
+        {
+            anim.SetFloat("Speed", 0);
+            anim.SetBool("Facing UP", true);
         }
         if (Input.GetKey(right))
         {
+            anim.SetBool("IsRight", true);
             isFacingRight = true;
+            anim.SetFloat("Speed",1);
         }
         if (Input.GetKey(Up))
         {
-           
+            anim.SetFloat("Speed",1);
+            anim.SetBool("Facing UP", true);
+            anim.SetBool("IsRight", false);
         }
+        if (Input.GetKeyUp(Up))
+        {
+            anim.SetFloat("Speed", 0);
+            anim.SetBool("Facing UP", true);
+
+        }
+        if (Input.GetKey(down))
+        {
+            anim.SetFloat("Speed", 1);
+            anim.SetBool("Facing UP", false);
+            anim.SetBool("IsRight", false);
+        }
+        if (Input.GetKeyUp(down))
+        {
+            anim.SetFloat("Speed", 0);
+            anim.SetBool("Facing UP", false);
+        }
+
         if (isFacingRight == false)
         {
             GetComponent<SpriteRenderer>().flipX = false;
