@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: house
     uniqueID: 3615898433
+    locked: 0
+  - name: shelf
+    uniqueID: 539502749
     locked: 0
