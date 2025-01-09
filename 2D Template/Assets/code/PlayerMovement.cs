@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(Up))
         {
             anim.SetFloat("Speed", 0);
-            anim.SetBool("Facing UP", true);
+            anim.SetBool("Facing UP", false);
 
         }
         if (Input.GetKey(down))
