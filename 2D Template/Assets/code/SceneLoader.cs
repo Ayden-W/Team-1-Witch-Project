@@ -8,11 +8,17 @@ public class SceneLoader : MonoBehaviour
 {
     public string sceneName;
 
-    public bool canChangeScenes = true;
+    private bool canChangeScenes = false;
 
     public float waitTimeSeconds;
     private GameObject Door;
-    
+    //public static Vector2 lastPostion;
+
+    private void Start()
+    {
+        StartCoroutine(waitTime());
+    }
+
     public void changeScene()
     {
         SceneManager.LoadScene(sceneName);
@@ -21,7 +27,9 @@ public class SceneLoader : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-           changeScene();
+            //walkedThroughDoor =! walkedThroughDoor;
+           // lastPostion = collision.transform.position;
+            changeScene();
             Debug.Log("Door");
 
         }

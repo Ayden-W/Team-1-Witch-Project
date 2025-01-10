@@ -1,7 +1,9 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -25,13 +27,29 @@ public class PlayerMovement : MonoBehaviour
 
     //Animations
     public Animator anim;
+    private void Awake()
+    {
+        //if (!SceneLoader.walkedThroughDoor.GetValueOrDefault(true))
+        
+            //transform.position = SceneLoader.lastPostion;
+        
+        pickUpBag.bagsCollected = pickUpBag.transferedBags;
+    }
 
 
     private void Start()
     {
-        activeMoveSpeed = moveSpeed;
-    }
+        if (PrePosition.scenePosPre.ContainsKey(SceneManager.GetActiveScene().name))
+        {
+            transform.position = PrePosition.scenePosPre[SceneManager.GetActiveScene().name];
+            Debug.Log($"Loading position in scene {SceneManager.GetActiveScene().name} at {transform.position}");
+        }
 
+        Debug.Log("same spot");
+        activeMoveSpeed = moveSpeed;
+        Debug.Log(pickUpBag.bagsCollected);
+    }
+  
 
     void Update()
     {

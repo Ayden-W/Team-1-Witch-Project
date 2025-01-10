@@ -75,5 +75,5 @@ public class Dialogue : MonoBehaviour
         dialogueCanvas.SetActive(false);
     }
 
-    if
+    
 }
