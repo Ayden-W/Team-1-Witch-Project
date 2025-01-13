@@ -546,8 +546,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -128.8, y: -87.2}
-  m_SizeDelta: {x: -795.9655, y: -553.2355}
+  m_AnchoredPosition: {x: -178.83, y: -152.62}
+  m_SizeDelta: {x: -1554.2676, y: -935.827}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584607293
 MonoBehaviour:
@@ -780,8 +780,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715006918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.2148, y: -1.2204, z: 0}
-  m_LocalScale: {x: 7.2488165, y: 6.084812, z: 0}
+  m_LocalPosition: {x: -6.19, y: -1.35, z: 0}
+  m_LocalScale: {x: 7.334353, y: 6.1566133, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 36363559}
@@ -859,16 +859,16 @@ MonoBehaviour:
   - "Got it. Shiny thing, don\u2019t insult the rat. Anything else?"
   - "Just be quick about it. Time isn\u2019t on your side, Mallori. Good luck.\""
   portrait:
-  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
-  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
-  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
-  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
-  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
-  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
-  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
-  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
-  - {fileID: 21300000, guid: 19efbd64d0563af409dd39928ab4c7bb, type: 3}
-  - {fileID: 21300000, guid: 5306c2d68012761458be27dcd6a7deef, type: 3}
+  - {fileID: -582897116, guid: 2781a0947962e004b88b49333432d834, type: 3}
+  - {fileID: 21300000, guid: 83e51e51620c60c48b21afb8830c7004, type: 3}
+  - {fileID: -582897116, guid: 2781a0947962e004b88b49333432d834, type: 3}
+  - {fileID: 21300000, guid: 83e51e51620c60c48b21afb8830c7004, type: 3}
+  - {fileID: -582897116, guid: 2781a0947962e004b88b49333432d834, type: 3}
+  - {fileID: 21300000, guid: 83e51e51620c60c48b21afb8830c7004, type: 3}
+  - {fileID: -582897116, guid: 2781a0947962e004b88b49333432d834, type: 3}
+  - {fileID: 21300000, guid: 83e51e51620c60c48b21afb8830c7004, type: 3}
+  - {fileID: -582897116, guid: 2781a0947962e004b88b49333432d834, type: 3}
+  - {fileID: 21300000, guid: 83e51e51620c60c48b21afb8830c7004, type: 3}
 --- !u!1 &765549274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,8 +1039,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 371, y: 259}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 768, y: 421}
+  m_SizeDelta: {x: 250.7046, y: 74.0566}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1088421047
 MonoBehaviour:
@@ -1276,8 +1276,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 81.81128, y: -194.09818}
-  m_SizeDelta: {x: -367.439, y: -434.9681}
+  m_AnchoredPosition: {x: 43, y: -287}
+  m_SizeDelta: {x: -1110.6022, y: -791.4113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1282983020
 MonoBehaviour:
