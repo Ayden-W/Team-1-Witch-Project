@@ -8,7 +8,7 @@ public class SceneLoader : MonoBehaviour
 {
     public string sceneName;
 
-    private bool canChangeScenes = false;
+    private bool canChangeScenes = true;
 
     public float waitTimeSeconds;
     private GameObject Door;
@@ -25,13 +25,18 @@ public class SceneLoader : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (canChangeScenes == true)
         {
-            //walkedThroughDoor =! walkedThroughDoor;
-           // lastPostion = collision.transform.position;
-            changeScene();
-            Debug.Log("Door");
+            if (collision.CompareTag("Player"))
+            {
+                //walkedThroughDoor =! walkedThroughDoor;
+                // lastPostion = collision.transform.position;
+                changeScene();
+                waitTime();
+                Debug.Log("Door");
 
+
+            }
         }
     }
     IEnumerator waitTime()
