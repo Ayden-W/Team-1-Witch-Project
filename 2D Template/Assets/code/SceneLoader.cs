@@ -8,22 +8,35 @@ public class SceneLoader : MonoBehaviour
 {
     public string sceneName;
 
-    public bool canChangeScenes = true;
+    private bool canChangeScenes = true;
 
     public float waitTimeSeconds;
     private GameObject Door;
-    
+    //public static Vector2 lastPostion;
+
+    private void Start()
+    {
+        StartCoroutine(waitTime());
+    }
+
     public void changeScene()
     {
         SceneManager.LoadScene(sceneName);
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (canChangeScenes == true)
         {
-           changeScene();
-            Debug.Log("Door");
+            if (collision.CompareTag("Player"))
+            {
+                //walkedThroughDoor =! walkedThroughDoor;
+                // lastPostion = collision.transform.position;
+                changeScene();
+                waitTime();
+                Debug.Log("Door");
 
+
+            }
         }
     }
     IEnumerator waitTime()
