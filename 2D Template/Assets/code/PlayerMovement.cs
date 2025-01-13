@@ -87,12 +87,13 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetFloat("Speed",1);
             anim.SetBool("Facing UP", true);
-            anim.SetBool("IsRight", false);
+            
         }
         if (Input.GetKeyUp(Up))
         {
             anim.SetFloat("Speed", 0);
-            anim.SetBool("Facing UP", false);
+            anim.SetBool("Facing UP", true);
+            anim.SetBool("IsRight", false);
 
         }
         if (Input.GetKey(down))
@@ -105,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetFloat("Speed", 0);
             anim.SetBool("Facing UP", false);
+            anim.SetBool("IsRight", false);
         }
 
         if (isFacingRight == false)
