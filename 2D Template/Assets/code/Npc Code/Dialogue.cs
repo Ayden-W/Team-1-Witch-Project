@@ -31,6 +31,10 @@ public class Dialogue : MonoBehaviour
     private string[] dialogueWords;
 
     [SerializeField]
+    [TextArea]
+    private string[] dialogueWords2;
+
+    [SerializeField]
     private Sprite[] portrait;
 
      private bool dialogueActivated;
@@ -59,7 +63,11 @@ public class Dialogue : MonoBehaviour
             }
             if (pickUpBag.bagsCollected == 3)
             {
-
+                dialogueCanvas.SetActive(true);
+                SpeakerText.text = speaker[step];
+                dialogueText.text = dialogueWords2[step];
+                PortraitImage.sprite = portrait[step];
+                step += 1;
             }
             
         }
