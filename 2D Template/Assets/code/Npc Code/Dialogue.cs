@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
+    [SerializeField] private pickUpBag bag;
     //UI References
     [SerializeField]
     private GameObject dialogueCanvas;
@@ -38,6 +39,9 @@ public class Dialogue : MonoBehaviour
       // Update is called once per frame
     void Update()
     {
+        
+        
+        
         if(Input.GetButtonDown("Interact") && dialogueActivated == true)
         {
             if (step >= speaker.Length)
@@ -53,7 +57,10 @@ public class Dialogue : MonoBehaviour
                 PortraitImage.sprite = portrait[step];
                 step += 1;
             }
+            if (pickUpBag.bagsCollected == 3)
+            {
 
+            }
             
         }
     }
@@ -74,6 +81,7 @@ public class Dialogue : MonoBehaviour
         dialogueActivated = false;
         dialogueCanvas.SetActive(false);
     }
+
 
     
 }
