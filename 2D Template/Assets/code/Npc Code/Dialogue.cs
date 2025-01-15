@@ -53,7 +53,7 @@ public class Dialogue : MonoBehaviour
                 dialogueCanvas.SetActive(false);
                 step = 0;
             }
-            else
+            else 
             {
                 dialogueCanvas.SetActive(true);
                 SpeakerText.text = speaker[step];
