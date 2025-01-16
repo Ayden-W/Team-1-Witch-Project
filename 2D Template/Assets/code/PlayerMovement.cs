@@ -58,8 +58,9 @@ public class PlayerMovement : MonoBehaviour
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput.Normalize();
         rb2D.velocity = moveInput * activeMoveSpeed;
-        
 
+        anim.SetFloat("X direction", moveInput.x);
+        anim.SetFloat("Y direction", moveInput.y);
         if (Input.GetKey(left))
         {
             anim.SetBool("IsRight", true);
