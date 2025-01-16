@@ -61,7 +61,7 @@ public class Dialogue : MonoBehaviour
                 PortraitImage.sprite = portrait[step];
                 step += 1;
             }
-            if (pickUpBag.bagsCollected == 3)
+            if (pickUpBag.bagsCollected == 2)
             {
                 dialogueCanvas.SetActive(true);
                 SpeakerText.text = speaker[step];
