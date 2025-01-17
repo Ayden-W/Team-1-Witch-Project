@@ -341,7 +341,7 @@ SpriteRenderer:
   m_SortingLayerID: -1397445831
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: 22eeefe670720f64886e3ff58e4ea4b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7af131fb8381bdf47851583bbde67848, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -360,8 +360,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33679684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.89, y: -106.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -46.2339, y: -107.4181, z: 0}
+  m_LocalScale: {x: 3.0504, y: 3.0877, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -380,18 +380,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.06648372, y: -0.02704513}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5385246, y: 0.5750054}
   m_EdgeRadius: 0
 --- !u!1 &38423531
 GameObject:
@@ -5433,6 +5433,7 @@ GameObject:
   - component: {fileID: 866260350}
   - component: {fileID: 866260349}
   - component: {fileID: 866260351}
+  - component: {fileID: 866260352}
   m_Layer: 0
   m_Name: rat copy (1)
   m_TagString: Untagged
@@ -5533,6 +5534,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.6}
   m_EdgeRadius: 0
+--- !u!114 &866260352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866260348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3865053bed3d5e642a8424d3433d0705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bag: {fileID: 0}
+  dialogueCanvas: {fileID: 0}
+  SpeakerText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  PortraitImage: {fileID: 0}
+  speaker:
+  - Eugene
+  - Mallori
+  - Eugene
+  - Mallori
+  - Eugene
+  dialogueWords:
+  - "\u201CYou did it! My precious bag! I knew you were up for the task.\u201D\r\n"
+  - " (holds the bag out at arm\u2019s length) \u201CYeah, yeah. Here. Now I have
+    to get this back to Nayla, right?\u201D\r\n\n"
+  - "\u201CThat\u2019s the plan. She\u2019s waiting for you. And word of advice?
+    Don\u2019t keep her waiting too long. Witches aren\u2019t known for their patience.\u201D\r\n"
+  - "(sighing) \u201CGreat. Thanks for nothing, Eugene.\u201D\n"
+  - " (grinning mischievously) \u201COh, you\u2019re welcome. Now go on! Don\u2019t
+    let her hex you for being late.\u201D\n"
+  dialogueWords2: []
+  portrait: []
 --- !u!1 &868019281
 GameObject:
   m_ObjectHideFlags: 0
